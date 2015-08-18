@@ -12,7 +12,7 @@ curl_setopt($ch, CURLOPT_POST, count($data));
 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);  
 $response = curl_exec($ch);
 
-if(curl_getinfo($ch, CURLINFO_HTTP_CODE) === 200 )
+if(curl_getinfo($ch, CURLINFO_HTTP_CODE) === 204 )
 {
 	curl_close($ch);
 	echo "Authenticated";
